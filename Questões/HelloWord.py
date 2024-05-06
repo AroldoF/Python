@@ -1,10 +1,8 @@
 print("Hello Word!")
 print('7'+'4')
-nome='Aroldo'
-idade=18
-peso=63.3
-print(nome,idade,peso)
 nome=input('Qual o seu nome?')
-idade=input('Qual sua idade?')
-peso=input('Qual o Seu peso?')
-print(nome, idade, peso)
+dia_nasceu=input('Dia que você nasceu?')
+mes=input('Em que mês você nasceu?')
+idade=input('Em que ano você nasceu?')
+print('Olá',nome+'! Seja Bem vindo!')
+print('Você nasceu dia',dia_nasceu,'de',mes,'no ano de',idade)

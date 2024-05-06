@@ -1,8 +1,0 @@
-print("Hello Word!")
-print('7'+'4')
-nome=input('Qual o seu nome?')
-dia_nasceu=input('Dia que você nasceu?')
-mes=input('Em que mês você nasceu?')
-idade=input('Em que ano você nasceu?')
-print('Olá',nome+'! Seja Bem vindo!')
-print('Você nasceu dia',dia_nasceu,'de',mes,'no ano de',idade)

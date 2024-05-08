@@ -1,0 +1,13 @@
+n1=int(input('Digite um numero!'))
+n2=int(input('Digite um numero!'))
+result=n1+n2
+print('A soma entre {} e {} será igual a {}'.format(n1,n2,result))
+print('Type do resultado é',type(result))
+result=str(result)
+print('O resultado têm apenas espaços?', result.isspace())
+print('O resultado têm apenas números?', result.isnumeric())
+print('O resultado têm apenas letras?', result.isalpha())
+print('O resultado têm números ou letras?', result.isalnum())
+print('O resultado têm apenas letras maiusculas?', result.isupper())
+print('O resultado têm apenas letras minusculas?', result.islower())
+print('O resultado têm letras maiusculas e minusculas?', result.istitle())

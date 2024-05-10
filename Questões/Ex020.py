@@ -1,0 +1,9 @@
+from random import shuffle
+
+a1 = input("Informe o nome do Aluno: ")
+a2 = input("Informe o nome do Aluno: ")
+a3 = input("Informe o nome do Aluno: ")
+a4 = input("Informe o nome do Aluno: ")
+alunos = [a1, a2, a3, a4]
+shuffle(alunos)
+print("O aluno(a) sorteado foi",alunos)

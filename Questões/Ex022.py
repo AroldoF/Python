@@ -1,6 +1,6 @@
-nome = input("Digite seu nome! ")
+nome = input("Digite seu nome! ").strip()
 print('Seu nome todo maiusculo: {}!'.format(nome.upper()))
 print('Seu nome todo minusculo: {}!'.format(nome.lower()))
+print('Seu nome sem espaços tem {} letras!'.format(len(nome)-nome.count(' ')))
 d = nome.split()
-print('Seu nome sem espaços tem {} letras!'.format(len("".join(d))))
 print('O seu primeiro nome têm {} letras!'.format(len(d[0])))

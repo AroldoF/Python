@@ -10,15 +10,19 @@ def print_com_delay(texto, delay=0.1):
 
 
 list = ["PAPEL", "TESOURA", "PEDRA"]
-jogada = input("Escolha sua jogada: Pedra, Papel ou Tesoura!\n").strip().upper()
+print(f"""Game JOKENPO!
+Suas opções:
+Pedra!
+Papel!
+Tesoura!\n""")
+jogada = input("Escolha sua jogada: ").strip().upper()
 bot = choice(list)
 if bot == jogada:
     result = "Empate... Quero outra jogo!"
 elif (
     (jogada == "PEDRA" and bot == "PAPEL")
     or (jogada == "PAPEL" and bot == "TESOURA")
-    or (jogada == "TESOURA" and bot == "PEDRA")
-):
+    or (jogada == "TESOURA" and bot == "PEDRA")):
     result = "HAHA... Eu ganhei!"
 else:
     result = "Vo-você deu sorte... Droga eu perdi!"

@@ -1,5 +1,5 @@
-altura = float(input("Digite a sua altura: "))
-peso = float(input("Digite o seu peso: "))
+peso = float(input("Digite a sua altura: (kg) "))
+altura = float(input("Digite o seu peso: (m) "))
 imc = peso / (altura**2)
 if imc < 18.5:
     grau = "Abaixo do Peso"

@@ -2,18 +2,18 @@ from datetime import date
 
 nasc = int(input("Informe o ano em que você nasceu: "))
 idade = date.today().year - nasc
-
 if idade <= 9:
     categoria = "MIRIM"
 elif idade <= 14:
     categoria = "INFANTIL"
 elif idade <= 19:
     categoria = "JUNIOR"
-elif idade <= 20:
+elif idade <= 25:
     categoria = "SÊNIOR"
 else:
     categoria = "MASTER"
-print(f"A categoria que você consegue competir é {categoria}!")
+print(f"O atleta tem {idade} anos")
+print(f"A categoria que ele consegue competir é {categoria}!")
 
 """
 test=bool(False)

@@ -1,7 +1,4 @@
-soma = 0
-maior = 0
-menor = 0
-c = 0
+soma = maior = menor = c = 0
 r = "Ss"
 while r not in "Nn":
     n = int(input(f"Digite o {c+1}° número: "))
@@ -11,8 +8,8 @@ while r not in "Nn":
         menor = n
     soma += n
     c += 1
-    if c % 2 == 0 and c > 1:
-        r = input("Você quer continuar?[S/N] ")
+    if c > 1:
+        r = input("Você quer continuar?[S/N] ").strip()[0]
 media = soma / c
 print(f"A média de todos os {c} números é {media}")
 print(f"Entre os {c} números o maior foi {maior} e o menor foi {menor}")

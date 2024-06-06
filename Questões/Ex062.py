@@ -8,3 +8,4 @@ while c < t:
     c += 1
     if c == t:
         t += int(input("Você quer mostrar mais quantos termos? "))
+print(f"Programa finalizado, foram mostrados {c-1}° termos")

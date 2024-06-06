@@ -1,10 +1,4 @@
-i = 1
-s = "Ss"
-while s not in "Nn":
-    sexo = input(f"Digite o gênero do {i}° [M/F]: ")
-    if sexo not in "MmFf":
-        print("Erro! Gênero não identificado.")
-        i -= 1
-    print("=" * 20)
-    i += 1
-    s = input("Quer continuar?[S/N]\n").upper()
+sexo = input(f"Digite seu gênero:[M/F] ").strip()[0]
+while sexo not in "MmFf":   
+    sexo=input("Erro! Informe seu gênero: ").strip()[0]
+print(f'Seu gênero {sexo.upper()[0]} registrado com sucesso!')

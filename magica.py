@@ -5,7 +5,12 @@ monte1 = [0] * 13
 monte2 = [0] * 13
 monte3 = [0] * 13
 monte4 = [0] * 13
+
+# montes = [
+#     [0] * 13 for _ in range(4)
+# ]
 baralho = [i for i in range(1, 53)]  # Baralho global
+
 
 def embaralhar():
     m1 = m2 = m3 = m4 = c = 0
@@ -26,6 +31,7 @@ def embaralhar():
         if c == 4:
             c = 0
 
+
 def novo_baralho():
     global baralho  # Permite modificar a variável global baralho
     escolha = int(input("Em qual monte está sua carta? (1, 2, 3 ou 4) "))
@@ -36,7 +42,8 @@ def novo_baralho():
     elif escolha == 3:
         baralho = monte1 + monte2 + monte4 + monte3
     else:
-        baralho = monte1 + monte2 + monte3 + monte4  
+        baralho = monte1 + monte2 + monte3 + monte4
+
 
 shuffle(baralho)
 print("Baralho embaralhado:", baralho)
@@ -46,7 +53,7 @@ print("Escolha uma carta:")
 
 for rodada in range(3):
     print(f"\nRodada {rodada + 1}:")
-    
+
     embaralhar()
 
     print("Monte 1:", monte1)
